@@ -301,6 +301,7 @@ public class Kalkulator {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String tekst = a0TextField.getText();
+                if (tekst.isEmpty()) return;
                 String zmienionyTekst = "";
 
                 for (int i = 0; i < tekst.length(); i++) {
